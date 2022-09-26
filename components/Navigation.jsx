@@ -56,7 +56,7 @@ const Navigation = () => {
           <div className="md:flex space-x-5">
             <ul className="hidden md:flex text-green-500 font-semibold items-center gap-8">
               {links.map((link) => (
-                <li>
+                <li key={link.href}>
                   <Link href={`${link.href}`}>
                     <span className="cursor-pointer">{link.name}</span>
                   </Link>
