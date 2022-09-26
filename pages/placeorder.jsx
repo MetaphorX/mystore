@@ -152,7 +152,7 @@ const PlaceOrder = () => {
                       <tr>
                         <th
                           scope="row"
-                          colspan="3"
+                          colSpan={3}
                           className="hidden pt-6 pl-6 pr-3 text-sm font-light text-right text-slate-500 sm:table-cell md:pl-0"
                         >
                           Subtotal
@@ -170,7 +170,7 @@ const PlaceOrder = () => {
                       <tr>
                         <th
                           scope="row"
-                          colspan="3"
+                          colSpan={3}
                           className="hidden pt-6 pl-6 pr-3 text-sm font-light text-right text-slate-500 sm:table-cell md:pl-0"
                         >
                           Shipping
@@ -188,7 +188,7 @@ const PlaceOrder = () => {
                       <tr>
                         <th
                           scope="row"
-                          colspan="3"
+                          colSpan={3}
                           className="hidden pt-4 pl-6 pr-3 text-sm font-light text-right text-slate-500 sm:table-cell md:pl-0"
                         >
                           Tax
@@ -206,7 +206,7 @@ const PlaceOrder = () => {
                       <tr>
                         <th
                           scope="row"
-                          colspan="3"
+                          colSpan={3}
                           className="hidden pt-4 pl-6 pr-3 text-sm font-normal text-right text-slate-700 sm:table-cell md:pl-0"
                         >
                           Total
