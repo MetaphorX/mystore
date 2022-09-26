@@ -55,13 +55,27 @@ const Navigation = () => {
           </Link>
           <div className="md:flex space-x-5">
             <ul className="hidden md:flex text-green-500 font-semibold items-center gap-8">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link href={`${link.href}`}>
-                    <span className="cursor-pointer">{link.name}</span>
+              <li>
+                  <Link href="/">
+                    <span className="cursor-pointer">Home</span>
                   </Link>
                 </li>
-              ))}
+              <li>
+                  <Link href="/">
+                    <span className="cursor-pointer">Men</span>
+                  </Link>
+                </li>
+              <li>
+                  <Link href="/">
+                    <span className="cursor-pointer">Women</span>
+                  </Link>
+                </li>
+              <li>
+                  <Link href="/">
+                    <span className="cursor-pointer">Kids</span>
+                  </Link>
+                </li>
+              
               <Link href="/cart">
                 <div>
                   {cartItemsCount > 0 && (
@@ -161,13 +175,27 @@ const Navigation = () => {
             {/* end of logo and close icon */}
             <div className="flex flex-col py-6">
               <ul className="text-left font-bold text-green-600 text-lg">
-                {links.map((link) => (
-                  <li className="py-2">
-                    <Link href={`${link.href}`}>
-                      <span className="cursor-pointer py-3 border-2 px-2 border-rounded w-full drop-shadow-md text-center hover:translate-x-2">{link.name}</span>
+                <li className="py-2">
+                    <Link href="/">
+                      <span className="cursor-pointer py-3 border-2 px-2 border-rounded w-full drop-shadow-md text-center hover:translate-x-2">Home</span>
                     </Link>
                   </li>
-                ))}
+                <li className="py-2">
+                    <Link href="/">
+                      <span className="cursor-pointer py-3 border-2 px-2 border-rounded w-full drop-shadow-md text-center hover:translate-x-2">Men</span>
+                    </Link>
+                  </li>
+                <li className="py-2">
+                    <Link href="/">
+                      <span className="cursor-pointer py-3 border-2 px-2 border-rounded w-full drop-shadow-md text-center hover:translate-x-2">Women</span>
+                    </Link>
+                  </li>
+                <li className="py-2">
+                    <Link href="/">
+                      <span className="cursor-pointer py-3 border-2 px-2 border-rounded w-full drop-shadow-md text-center hover:translate-x-2">Kids</span>
+                    </Link>
+                  </li>
+                
               </ul>
               <div className="inline-block ">
                 <Link href="/cart">
